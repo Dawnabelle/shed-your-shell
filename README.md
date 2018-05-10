@@ -1,27 +1,34 @@
-# ClothingSwap
+# _Online Naked Human Party_
 
+
+#### _Epicodus Team Week_
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
+#### **Dawn Mott** :sunrise_over_mountains: **Brenda Franco** :honeybee: **Sean McDermott**, and **Jessica Schmitz**
+
+## Description
+_JavaScript - Team Week Project_
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Known Bugs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_There are many known :bug: at this time, this is a work in progress_
 
-## Running end-to-end tests
+## Support and contact details
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+_If you'd like to chat, please contact_ @dawnrparty _on_ ![alt text][1.1]
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+_HTML, CSS, JavaScript, jQuery, Bootstrap, and Angular_
+
+### License
+
+*This page is licensed under the MIT license*
+
+&copy; 2018 **Dawn Mott** :sunrise_over_mountains:, Brenda Franco :honeybee: Sean McDermott, and Jessica Schmitz
