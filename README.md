@@ -1,3 +1,6 @@
+<!-- Twitter icon from https://github.com/carlsednaoui/gitsocial -->
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+
 # _Online Naked Human Party_
 
 
