@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ItemModel } from '../../models/item.model';
 import { ItemsService } from '../../items.service';
 import { FirebaseListObservable } from 'angularfire2/database';
@@ -19,5 +19,6 @@ export class GridComponent implements OnInit {
   ngOnInit() {
     this.items = this.itemsService.getItems();
   }
+
 
 }
