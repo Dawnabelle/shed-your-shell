@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { GridComponent } from './marketplace/grid/grid.component';
+import { FilterComponent } from './marketplace/filter/filter.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +25,9 @@ export const firebaseConfig = {
     AppComponent,
     MarketplaceComponent,
     WelcomeComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    GridComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

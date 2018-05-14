@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem;" *ngFor="let item of items | async">
+  <!-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <div class="card-body">
+    <h5 class="card-title">{{item.colors[0]}} {{item.type}}, {{item.size}}</h5>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Size: {{item.size}}</li>
+    <li class="list-group-item">Color: {{item.colors[0]}}</li>
+    <li class="list-group-item">Cut: {{item.cut}}</li>
+    <li class="list-group-item">Condition: {{item.condition}}</li>
+    <li class="list-group-item">User: {{item.userName}}</li>
+    <li class="list-group-item">Availability: {{item.availability}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Details</a>
+    <a href="#" class="card-link">Swap</a>
+  </div>
+</div>
