@@ -1,9 +1,18 @@
+app-filter {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  float: left;
+  border: 1px solid black;
+}
+
 app-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  align-content: space-around;width: 75%;
+  align-content: space-around;
+  width: 75%;
   justify-content: space-around;
   float: right;
   border: 1px solid black;
