@@ -9,6 +9,8 @@ import { ItemModel } from './models/item.model';
 
 export class TypePipe implements PipeTransform {
   transform(input: ItemModel[], desiredType) {
+    console.log("desired type at pipe: " , desiredType);
+    console.log("input array at pipe: " , input);
     let output: ItemModel[] = [];
     for (let i = 0; i < input.length; i++) {
       if(desiredType === "top") {

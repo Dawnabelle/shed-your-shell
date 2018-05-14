@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ItemsService]
 })
 export class GridComponent implements OnInit {
+@Input() childTypeParam: string;
 
   items: FirebaseListObservable<any[]>;
 

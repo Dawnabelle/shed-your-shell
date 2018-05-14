@@ -16,9 +16,7 @@ export class MarketplaceComponent implements OnInit {
   typeParam = null;
 
   typeParamSet(type) {
-    console.log(type);
     this.typeParam = type;
-    console.log(this.typeParam);
   }
 
 }
