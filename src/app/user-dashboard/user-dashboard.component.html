@@ -1,13 +1,18 @@
 <div class="container">
-  <div  class="user-welcome">
-    <p *ngFor="let currentUser of users">Welcome, {{users[0].userNameLogIn}}</p>
-  </div>
+
   <div class="card">
     <div class="card-body">
-      <h3 class="card-title">Upload your garment</h3>
+      <div  class="user-welcome">
+        <p class="user-welcome" *ngFor="let currentUser of users">Welcome, {{users[0].userNameLogIn}}</p>
+      </div>
+      <h3 class="card-title">Upload Your Garment</h3>
       <div class="user-info">
-        <label>User Name (required)</label>
+        <label> Confirm User Name (required)</label>
         <input #newUserName type="text" name="userName" required>
+      </div>
+      <div class="upload-img">
+        <label>Link Image URL</label>
+        <input #newItemUrl type="text" name="itemUrl">
       </div>
       <div class="radio-type">
         <h3>Garment Type</h3>
@@ -52,7 +57,7 @@
         <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="fair">Fair</label>
       </div>
       <div class="save-garment">
-        <button (click)="submitForm(newUserName.value); newUserName.value=''; newItemType.value=''; newItemSize.value=''; newItemColors.value=''; newItemCut.value=''; newItemCondition.value=''" type="submit" id="save-garment">Save Garment!</button>
+        <button (click)="submitForm(newUserName.value, newItemUrl.value);  newUserName.value=''; newItemUrl.value=''; newItemType.value=''; newItemSize.value=''; newItemColors.value=''; newItemCut.value=''; newItemCondition.value=''" type="submit" id="save-garment">Save Garment!</button>
       </div>
     </div>
   </div>

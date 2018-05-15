@@ -1,0 +1,9 @@
+.input-name, .input-password{
+  display: block;
+}
+input#userName, input#password{
+  border: solid 1px #000;
+}
+.user-login{
+  border: 1px solid #000;
+}
