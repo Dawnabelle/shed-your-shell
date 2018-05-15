@@ -14,6 +14,7 @@ export class GridComponent implements OnInit {
 @Input() childTypeParam: string;
 @Input() childSizeParam: string;
 @Input() childCutParam: string;
+@Input() childConditionParam: string;
 
   items: FirebaseListObservable<any[]>;
 

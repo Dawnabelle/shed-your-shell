@@ -47,12 +47,13 @@
       <option value="unisex">Unisex</option>
     </select>
   </div>
-  <!-- <div class="filter-row">
+  <div class="filter-row">
     <h5>Garment Condition:</h5>
-    <select>
+    <select (change)="onChangeCondition($event.target.value)">
+      <option value="">Please Select One</option>
       <option value="new">New</option>
       <option value="like-new">Like New</option>
       <option value="fair">Fair</option>
     </select>
-  </div> -->
+  </div>
 </div>

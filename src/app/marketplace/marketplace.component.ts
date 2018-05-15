@@ -16,6 +16,7 @@ export class MarketplaceComponent implements OnInit {
   typeParam = null;
   sizeParam = null;
   cutParam = null;
+  conditionParam = null;
 
   typeParamSet(type) {
     this.typeParam = type;
@@ -27,6 +28,10 @@ export class MarketplaceComponent implements OnInit {
 
   cutParamSet(cut) {
     this.cutParam = cut;
+  }
+
+  conditionParamSet(condition) {
+    this.conditionParam = condition;
   }
 
 }

@@ -9,10 +9,12 @@ export class FilterComponent implements OnInit {
 @Output() typeSender = new EventEmitter();
 @Output() sizeSender = new EventEmitter();
 @Output() cutSender = new EventEmitter();
+@Output() conditionSender = new EventEmitter();
 
 filterByType: string = "";
 filterBySize: string = "";
 filterByCut: string = "";
+filterByCondition: string = "";
 
 
 
@@ -34,5 +36,10 @@ filterByCut: string = "";
   onChangeCut(optionFromMenu) {
     this.filterByCut = optionFromMenu;
     this.cutSender.emit(optionFromMenu);
+  }
+
+  onChangeCondition(optionFromMenu) {
+    this.filterByCondition = optionFromMenu;
+    this.conditionSender.emit(optionFromMenu);
   }
 }

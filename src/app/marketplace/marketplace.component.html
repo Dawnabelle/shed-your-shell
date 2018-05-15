@@ -1,4 +1,4 @@
 <div class="marketplace">
-  <app-filter (typeSender)="typeParamSet($event)" (sizeSender)="sizeParamSet($event)" (cutSender)="cutParamSet($event)"></app-filter>
-  <app-grid [childTypeParam]="typeParam" [childSizeParam]="sizeParam" [childCutParam]="cutParam"></app-grid>
+  <app-filter (typeSender)="typeParamSet($event)" (sizeSender)="sizeParamSet($event)" (cutSender)="cutParamSet($event)" (conditionSender)="conditionParamSet($event)"> </app-filter>
+  <app-grid [childTypeParam]="typeParam" [childSizeParam]="sizeParam" [childCutParam]="cutParam" [childConditionParam]="conditionParam"></app-grid>
 </div>
