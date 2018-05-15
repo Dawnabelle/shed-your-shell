@@ -1,4 +1,7 @@
 <div class="card" *ngFor="let item of items | async | type:childTypeParam  | size:childSizeParam | cut:childCutParam | condition:childConditionParam | color:childColorParam">
+  <div class="availability" *ngIf="item.availability === false">
+    <p>PENDING SWAP</p>
+  </div>
   <img class="card-img-top" src="{{item.url}}" alt="Image of {{item.type}}">
   <div class="card-body">
     <h5 class="card-title">{{item.colors}} {{item.type}}, {{item.size}}</h5>
@@ -14,6 +17,6 @@
   </ul>
   <div class="card-body">
     <a href="#" class="card-link">Details</a>
-    <a href="#" class="card-link">Swap</a>
+    <a href="#" class="card-link" *ngIf="item.availability">Swap</a>
   </div>
 </div>
