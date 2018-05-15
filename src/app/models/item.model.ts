@@ -4,7 +4,7 @@ export class ItemModel {
     public userName: string,
     public type: string,
     public size: string,
-    public colors: Array<string>,
+    public colors: string,
     public cut: string,
     public condition: string,
     ){

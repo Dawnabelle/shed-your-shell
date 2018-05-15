@@ -4,7 +4,7 @@
       "userName": "Brenda",
       "type": "top",
       "size": "xs",
-      "colors": ["white"],
+      "colors": "white",
       "cut": "femme",
       "availability": true,
       "condition": "like-new"
@@ -13,7 +13,7 @@
       "userName": "Sean",
       "type": "bottom",
       "size": "s",
-      "colors": ["brown"],
+      "colors": "brown",
       "cut": "masc",
       "availability": true,
       "condition": "fair"
@@ -22,7 +22,7 @@
       "userName": "Jess",
       "type": "dress",
       "size": "m",
-      "colors": ["black"],
+      "colors": "black",
       "cut": "femme",
       "availability": true,
       "condition": "new"
@@ -31,7 +31,7 @@
       "userName": "Dawn",
       "type": "one-piece",
       "size": "l",
-      "colors": ["blue"],
+      "colors": "blue",
       "cut": "unisex",
       "availability": true,
       "condition": "like-new"
@@ -40,7 +40,7 @@
       "userName": "Dawn",
       "type": "accessory",
       "size": "xl",
-      "colors": ["yellow"],
+      "colors": "yellow",
       "cut": "uni",
       "availability": true,
       "condition": "new"
