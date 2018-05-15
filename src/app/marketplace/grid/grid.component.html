@@ -1,4 +1,4 @@
-<div class="card" *ngFor="let item of items | async | type:childTypeParam  | size:childSizeParam">
+<div class="card" *ngFor="let item of items | async | type:childTypeParam  | size:childSizeParam | cut:childCutParam">
   <!-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
   <div class="card-body">
     <h5 class="card-title">{{item.colors}} {{item.type}}, {{item.size}}</h5>

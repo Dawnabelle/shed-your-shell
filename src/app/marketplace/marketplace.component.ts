@@ -15,14 +15,18 @@ export class MarketplaceComponent implements OnInit {
 
   typeParam = null;
   sizeParam = null;
+  cutParam = null;
 
   typeParamSet(type) {
-    console.log("typeParamSet at marketplace: " , type);
     this.typeParam = type;
   }
 
-  sizeParamSet(type) {
-    this.sizeParam = type;
+  sizeParamSet(size) {
+    this.sizeParam = size;
+  }
+
+  cutParamSet(cut) {
+    this.cutParam = cut;
   }
 
 }

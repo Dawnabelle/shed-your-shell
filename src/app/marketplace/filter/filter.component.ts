@@ -8,9 +8,11 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 export class FilterComponent implements OnInit {
 @Output() typeSender = new EventEmitter();
 @Output() sizeSender = new EventEmitter();
+@Output() cutSender = new EventEmitter();
 
 filterByType: string = "";
 filterBySize: string = "";
+filterByCut: string = "";
 
 
 
@@ -27,5 +29,10 @@ filterBySize: string = "";
   onChangeSize(optionFromMenu) {
       this.filterBySize = optionFromMenu;
       this.sizeSender.emit(optionFromMenu);
+  }
+
+  onChangeCut(optionFromMenu) {
+    this.filterByCut = optionFromMenu;
+    this.cutSender.emit(optionFromMenu);
   }
 }
