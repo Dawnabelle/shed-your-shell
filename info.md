@@ -1,11 +1,27 @@
-## Running unit tests
+Dawn - Project manager, GitHub repo owner, researcher, user interface/business logic user page
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Jess - Design, user interface/business logic user page
 
-## Running end-to-end tests
+Brenda - Marketplace business logic/user interface
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Sean - Marketplace business logic, possible API goals
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MVP
+Splash Page - Jess design
+* ~~welcome~~
+* ~~simple login~~
+
+
+User Homepage - Jess design - Jess/Dawn business/user interface
+* ~~welcome with name~~
+* ~~upload item through url~~
+* ~~input form~~
+* submit to save
+* delete items
+
+
+Marketplace - Brenda/Sean to code - Jess design
+* ~~available items~~
+* ~~filter items~~
+* complete swap/mark “unavailable”
