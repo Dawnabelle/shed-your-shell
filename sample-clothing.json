@@ -46,9 +46,49 @@
       "type": "accessory",
       "size": "xl",
       "colors": "yellow",
-      "cut": "uni",
+      "cut": "unisex",
       "availability": true,
       "condition": "new"
+    },
+    {
+      "userName": "rudeboy",
+      "url":"https://cdn.shopify.com/s/files/1/0028/6132/products/Black-StadiumJacket-Front.jpg?v=1481894892g",
+      "type": "top",
+      "size": "m",
+      "colors": "black",
+      "cut": "masc",
+      "availability": true,
+      "condition": "new"
+    },
+    {
+      "userName": "coolgirl",
+      "url":"http://cdn.shopify.com/s/files/1/0933/1078/products/20170509222556.jpg?v=1518063911",
+      "type": "accessory",
+      "size": "xs",
+      "colors": "pink",
+      "cut": "unisex",
+      "availability": true,
+      "condition": "fair"
+    },
+    {
+      "userName": "coolgirl",
+      "url":"https://cdn.shopify.com/s/files/1/1514/5632/products/greenleggingsedit_1024x1024.jpg?v=1478900600",
+      "type": "bottom",
+      "size": "s",
+      "colors": "green",
+      "cut": "femme",
+      "availability": false,
+      "condition": "like-new"
+    },
+    {
+      "userName": "dudeboyrealz",
+      "url":"http://cdn1.bigcommerce.com/server1700/a4990/products/800/images/2725/TX_704V_MAIN__29325.1431984889.640.640.jpg?c=2",
+      "type": "accessory",
+      "size": "xl",
+      "colors": "multi",
+      "cut": "masc",
+      "availability": true,
+      "condition": "fair"
     }
   ]
 }
