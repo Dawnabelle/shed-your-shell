@@ -10,7 +10,16 @@ input#userName, input#password{
 }
 .user-login{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 30px 0;
+}
+#logInButton{
+  background-color: rgb(140, 223, 229);
+  color: #fff;
+  border-radius: 7px;
+}
+#logInButton:hover{
+  cursor: pointer;
 }
 .enter-site{
   min-height: 600px;
@@ -25,4 +34,8 @@ p#tagline{
   color: #fff;
   font-size: 2.2em;
   font-weight: bold;
+}
+#enter:hover{
+  color: rgb(247, 104, 32);
+  text-decoration: none;
 }
