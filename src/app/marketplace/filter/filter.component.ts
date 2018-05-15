@@ -10,11 +10,13 @@ export class FilterComponent implements OnInit {
 @Output() sizeSender = new EventEmitter();
 @Output() cutSender = new EventEmitter();
 @Output() conditionSender = new EventEmitter();
+@Output() colorSender = new EventEmitter();
 
 filterByType: string = "";
 filterBySize: string = "";
 filterByCut: string = "";
 filterByCondition: string = "";
+filterByColor: string = "";
 
 
 
@@ -41,5 +43,10 @@ filterByCondition: string = "";
   onChangeCondition(optionFromMenu) {
     this.filterByCondition = optionFromMenu;
     this.conditionSender.emit(optionFromMenu);
+  }
+
+  onChangeColor(optionFromMenu) {
+    this.filterByColor = optionFromMenu;
+    this.colorSender.emit(optionFromMenu);
   }
 }

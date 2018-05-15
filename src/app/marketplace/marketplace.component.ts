@@ -17,6 +17,7 @@ export class MarketplaceComponent implements OnInit {
   sizeParam = null;
   cutParam = null;
   conditionParam = null;
+  colorParam = null;
 
   typeParamSet(type) {
     this.typeParam = type;
@@ -32,6 +33,10 @@ export class MarketplaceComponent implements OnInit {
 
   conditionParamSet(condition) {
     this.conditionParam = condition;
+  }
+
+  colorParamSet(color) {
+    this.colorParam = color;
   }
 
 }
