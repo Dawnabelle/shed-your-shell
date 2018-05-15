@@ -2,7 +2,7 @@
   <h4>Search By:</h4>
   <div class="filter-row">
     <h5>Garment Type:</h5>
-    <select (change)="onChange($event.target.value)">
+    <select (change)="onChangeType($event.target.value)">
       <option value="">Please Select One</option>
       <option value="top">Top</option>
       <option value="bottom">Bottom</option>
@@ -11,9 +11,10 @@
       <option value="dress">Dresses</option>
     </select>
   </div>
-  <!-- <div class="filter-row">
+  <div class="filter-row">
     <h5>Size:</h5>
-    <select>
+    <select (change)="onChangeSize($event.target.value)">
+      <option value="">Please Select One</option>
       <option value="xs">Extra Small</option>
       <option value="s">Small</option>
       <option value="m">Medium</option>
@@ -21,7 +22,7 @@
       <option value="xl">Extra Large</option>
     </select>
   </div>
-  <div class="filter-row">
+  <!-- <div class="filter-row">
     <h5>Color:</h5>
     <select>
       <option value="red">Red</option>

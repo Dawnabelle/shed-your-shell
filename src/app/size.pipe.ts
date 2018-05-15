@@ -1,12 +1,27 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { ItemsService } from './items.service';
+import { ItemModel } from './models/item.model';
 
 @Pipe({
-  name: 'size'
+  name: 'size',
+  pure: false
 })
 export class SizePipe implements PipeTransform {
+  transform(input: ItemModel[], desiredSize) {
+    let output: ItemModel[] = [];
+    const sizes: Array<string> = ["xs", "s", "m", "l", "xl"];
+    const index = sizes.indexOf(desiredSize);
 
-  transform(value: any, args?: any): any {
-    return null;
+    if(desiredSize !== "" && desiredSize !== null) {
+      for (let i = 0; i < input.length; i ++) {
+        if(input[i].size === sizes[index]) {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else {
+      return input;
+    }
   }
 
 }

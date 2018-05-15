@@ -13,7 +13,7 @@ export class TypePipe implements PipeTransform {
     const types: Array<string> = ["top", "bottom", "one-piece", "accessory", "dress"];
     const index = types.indexOf(desiredType);
 
-    if (desiredType !== null) {
+    if (desiredType !== "" && desiredType !== null) {
       for (let i = 0; i < input.length; i++) {
         if(input[i].type === types[index]) {
          output.push(input[i]);
@@ -24,5 +24,5 @@ export class TypePipe implements PipeTransform {
       return input;
     }
   }
-  
+
 }
