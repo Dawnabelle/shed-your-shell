@@ -39,3 +39,6 @@ p#tagline{
   color: rgb(247, 104, 32);
   text-decoration: none;
 }
+#twitter{
+  background-image: url('https://www.madewell.com/media/assets/footer/socialicons_sprite_v1_m56577569830742556.png');
+}
