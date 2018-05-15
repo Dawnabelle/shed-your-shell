@@ -21,11 +21,37 @@ export class TypePipe implements PipeTransform {
          output.push(input[i]);
         }
       }
-      console.log("output after pipe: " , output);
+      return output;
+    } else if(desiredType === "bottom") {
+      for (let i = 0; i < input.length; i++) {
+        if(input[i].type === "bottom") {
+         output.push(input[i]);
+        }
+      }
+      return output;
+    } else if(desiredType === "one-piece") {
+      for (let i = 0; i < input.length; i++) {
+        if(input[i].type === "one-piece") {
+         output.push(input[i]);
+        }
+      }
+      return output;
+    } else if(desiredType === "accessory") {
+      for (let i = 0; i < input.length; i++) {
+        if(input[i].type === "accessory") {
+         output.push(input[i]);
+        }
+      }
+      return output;
+    } else if(desiredType === "dress") {
+      for (let i = 0; i < input.length; i++) {
+        if(input[i].type === "dress") {
+         output.push(input[i]);
+        }
+      }
       return output;
     } else {
       return input;
     }
   }
-
 }

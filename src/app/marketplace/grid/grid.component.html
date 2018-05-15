@@ -1,7 +1,7 @@
 <div class="card" *ngFor="let item of items | async | type:childTypeParam">
   <!-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
   <div class="card-body">
-    <h5 class="card-title">{{item.colors[0]}} {{item.type}}, {{item.size}}</h5>
+    <h5 class="card-title">{{item.colors}} {{item.type}}, {{item.size}}</h5>
     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
   </div>
   <ul class="list-group list-group-flush">
