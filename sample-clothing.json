@@ -2,6 +2,7 @@
   "items": [
     {
       "userName": "Brenda",
+      "url":"https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/12/13/goods-first-img/1513191871743163954.jpg",
       "type": "top",
       "size": "xs",
       "colors": "white",
@@ -11,6 +12,7 @@
     },
     {
       "userName": "Sean",
+      "url":"https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Diamond-Supply-Co.-Speedway-Brown-Pants-_278929-front-US.jpg",
       "type": "bottom",
       "size": "s",
       "colors": "brown",
@@ -20,6 +22,7 @@
     },
     {
       "userName": "Jess",
+      "url":"https://gloimg.rowcdn.com/ROSE/pdm-product-pic/Clothing/2016/08/29/goods-img/1517363028097156196.jpg",
       "type": "dress",
       "size": "m",
       "colors": "black",
@@ -29,6 +32,7 @@
     },
     {
       "userName": "Dawn",
+      "url":"https://i.ebayimg.com/images/g/PIwAAOSw6kxXHsfj/s-l500.jpg",
       "type": "one-piece",
       "size": "l",
       "colors": "blue",
@@ -38,6 +42,7 @@
     },
     {
       "userName": "Dawn",
+      "url":"https://images-na.ssl-images-amazon.com/images/I/51TzaPrnD4L.jpg",
       "type": "accessory",
       "size": "xl",
       "colors": "yellow",
