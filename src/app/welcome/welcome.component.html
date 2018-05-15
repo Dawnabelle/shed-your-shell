@@ -1,8 +1,16 @@
-<div class="user-Login">
-  <label>User Name</label>
-  <input type="text" name="userName">
-  <label>Password</label>
-  <input type="text" id="password" name="password">
+
+<div class="user-login">
+  <form class="log-in-form">
+    <div class="input-name">
+      <label>User Name</label>
+      <input [(ngModel)]="newUsername" name="userNameInput" type="text" id="userName">
+    </div>
+    <div class="input-password">
+      <label>Password</label>
+      <input type="text" id="password">
+    </div>
+    <!-- <button (click)="showName(currentUser)"type="submit" name="button">Log In</button> -->
+    <button (click)="newUserLogin('inputUsernameTemp', 'inputPassword')"type="submit" name="button">Log In</button>
+  </form>
 </div>
-<a routerLink="user-dashboard">Log In</a>
-<!-- <a routerLink="marketplace">marketplace</a> -->
+<a routerLink="user-dashboard">Enter Site</a>
