@@ -1,3 +1,56 @@
-<p>
-  filter works!
-</p>
+<div class="filter">
+  <h4>Search By:</h4>
+  <div class="filter-row">
+    <h5>Garment Type:</h5>
+    <select (change)="onChange($event.target.value)">
+      <option value="">Please Select One</option>
+      <option value="top">Top</option>
+      <option value="bottom">Bottom</option>
+      <option value="one-piece">One Piece</option>
+      <option value="accessory">Accessory</option>
+      <option value="dress">Dresses</option>
+    </select>
+  </div>
+  <!-- <div class="filter-row">
+    <h5>Size:</h5>
+    <select>
+      <option value="xs">Extra Small</option>
+      <option value="s">Small</option>
+      <option value="m">Medium</option>
+      <option value="l">Large</option>
+      <option value="xl">Extra Large</option>
+    </select>
+  </div>
+  <div class="filter-row">
+    <h5>Color:</h5>
+    <select>
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="black">Black</option>
+      <option value="blue">White</option>
+      <option value="grey">Grey</option>
+      <option value="brown">Brown</option>
+    </select>
+  </div>
+  <div class="filter-row">
+    <h5>Garment Cut:</h5>
+    <select>
+      <option value="femme">Femme</option>
+      <option value="masc">Masc</option>
+      <option value="unisex">Unisex</option>
+    </select>
+  </div>
+  <div class="filter-row">
+    <h5>Garment Condition:</h5>
+    <select>
+      <option value="new">New</option>
+      <option value="like-new">Like New</option>
+      <option value="fair">Fair</option>
+    </select>
+  </div> -->
+</div>

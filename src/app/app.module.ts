@@ -13,6 +13,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { GridComponent } from './marketplace/grid/grid.component';
 import { FilterComponent } from './marketplace/filter/filter.component';
+import { TypePipe } from './type.pipe';
+import { SizePipe } from './size.pipe';
+import { ColorPipe } from './color.pipe';
+import { CutPipe } from './cut.pipe';
+import { ConditionPipe } from './condition.pipe';
 
 
 
@@ -30,7 +35,12 @@ export const firebaseConfig = {
     WelcomeComponent,
     UserDashboardComponent,
     GridComponent,
-    FilterComponent
+    FilterComponent,
+    TypePipe,
+    SizePipe,
+    ColorPipe,
+    CutPipe,
+    ConditionPipe
   ],
   imports: [
     BrowserModule,

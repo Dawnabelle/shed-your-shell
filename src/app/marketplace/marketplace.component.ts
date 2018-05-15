@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarketplaceComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  typeParam = null;
+
+  typeParamSet(type) {
+    this.typeParam = type;
   }
 
 }

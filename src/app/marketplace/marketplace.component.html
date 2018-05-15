@@ -1,4 +1,4 @@
 <div class="marketplace">
-  <app-filter></app-filter>
-  <app-grid></app-grid>
+  <app-filter (typeSender)="typeParamSet($event)"></app-filter>
+  <app-grid [childTypeParam]="typeParam"></app-grid>
 </div>

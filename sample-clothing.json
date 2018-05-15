@@ -1,49 +1,49 @@
 {
   "items": [
     {
+      "userName": "Brenda",
       "type": "top",
       "size": "xs",
       "colors": ["white"],
-      "cut": "fem",
+      "cut": "femme",
       "availability": true,
-      "condition": "like-new",
-      "userName": "Brenda"
+      "condition": "like-new"
     },
     {
+      "userName": "Sean",
       "type": "bottom",
       "size": "s",
       "colors": ["brown"],
       "cut": "masc",
       "availability": true,
-      "condition": "fair",
-      "userName": "Sean"
+      "condition": "fair"
     },
     {
+      "userName": "Jess",
       "type": "dress",
       "size": "m",
       "colors": ["black"],
-      "cut": "fem",
+      "cut": "femme",
       "availability": true,
-      "condition": "good",
-      "userName": "Jess"
+      "condition": "new"
     },
     {
-      "type": "onepiece",
+      "userName": "Dawn",
+      "type": "one-piece",
       "size": "l",
       "colors": ["blue"],
-      "cut": "uni",
+      "cut": "unisex",
       "availability": true,
-      "condition": "like-new",
-      "userName": "Dawn"
+      "condition": "like-new"
     },
     {
+      "userName": "Dawn",
       "type": "accessory",
       "size": "xl",
-      "colors": ["gold"],
+      "colors": ["yellow"],
       "cut": "uni",
       "availability": true,
-      "condition": "good",
-      "userName": "Dawn"
+      "condition": "new"
     }
   ]
 }
