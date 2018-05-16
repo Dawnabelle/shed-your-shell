@@ -18,12 +18,6 @@ export class WelcomeComponent implements OnInit {
   ngOnInit() {
     console.log('this is just running in the background');
   }
-  // showName(clickedUser: User) {
-  //   this.userService.pushUser(clickedUser);
-  // }
-  // showName(clickedUser: User) {
-  //   console.log(this.users[0]);
-  // }
 
   newUserLogin() {
     this.newUser = new User(this.newUsername, this.newPassword);

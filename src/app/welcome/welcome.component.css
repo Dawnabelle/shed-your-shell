@@ -20,6 +20,8 @@ input#userName, input#password{
 }
 #logInButton:hover{
   cursor: pointer;
+  color: rgb(247, 104, 32);
+
 }
 .enter-site{
   min-height: 600px;
@@ -30,12 +32,12 @@ p#tagline{
   font-size: 1.3em;
   padding-top: 20px;
 }
-#enter{
+#market{
   color: #fff;
   font-size: 2.2em;
   font-weight: bold;
 }
-#enter:hover{
+#market:hover{
   color: rgb(247, 104, 32);
   text-decoration: none;
 }

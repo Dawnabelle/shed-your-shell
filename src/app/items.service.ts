@@ -16,6 +16,10 @@ export class ItemsService {
     return this.items;
   }
 
+  addItems(newItems: ItemModel) {
+    this.items.push(newItems);
+  }
+
   getItemById(itemID: string){
     return this.database.object('items/' + itemID);
   }
