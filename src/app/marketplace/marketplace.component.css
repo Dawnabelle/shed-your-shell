@@ -3,6 +3,7 @@
 }
 
 app-filter {
+  padding-top: 11%;
   display: flex;
   flex-direction: column;
   width: 20%;
