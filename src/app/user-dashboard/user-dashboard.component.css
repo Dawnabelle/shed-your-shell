@@ -1,3 +1,7 @@
+.user-welcome{
+  color: #fff;
+  font-size: 1.2em;
+}
 .card-body {
   background: linear-gradient(rgba(194, 223, 244), rgba(121, 217, 217));
   min-height: 900px;
