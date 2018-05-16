@@ -15,7 +15,7 @@
     <li class="list-group-item">User: {{item.userName}}</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Details</a>
-    <a href="#" class="card-link" *ngIf="item.availability">Swap</a>
+    <!-- <a href="#" class="card-link">Details</a> -->
+    <button href="#" class="btn" *ngIf="item.availability" (click)="toggleAvailability(item)">Swap</button>
   </div>
 </div>

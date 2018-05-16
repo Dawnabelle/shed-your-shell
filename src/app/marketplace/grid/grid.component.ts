@@ -25,5 +25,8 @@ export class GridComponent implements OnInit {
     this.items = this.itemsService.getItems();
   }
 
+  toggleAvailability(swappedItem) {
+    swappedItem.availability = false;
+  }
 
 }

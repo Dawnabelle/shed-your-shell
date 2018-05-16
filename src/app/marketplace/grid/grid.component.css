@@ -19,3 +19,7 @@
 .availability p {
   line-height: 3rem;
 }
+
+.btn {
+  background-color: rgb(140, 223, 229);
+}
