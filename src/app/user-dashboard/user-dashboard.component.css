@@ -61,3 +61,28 @@ h3.card-title{
     box-shadow: 5px 3px 3px #5E6261;
   }
 }
+@media (min-width: 451px) {
+  .container{
+    margin-top: 35px;
+    max-width: 850px;
+  }
+  .card-title{
+    padding-bottom: 20px;
+  }
+  .user-info{
+    margin-top: 40px;
+  }
+  .radio-sections {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  label{
+    margin-right: 15px;
+
+  }
+}
