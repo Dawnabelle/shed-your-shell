@@ -1,9 +1,44 @@
 .input-name, .input-password{
   display: block;
 }
+input#userName{
+  margin-right: 10px;
+}
 input#userName, input#password{
+  margin-top: 5px;
   border: solid 1px #000;
 }
 .user-login{
-  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+#logInButton{
+  background-color: rgb(140, 223, 229);
+  color: #fff;
+  border-radius: 7px;
+}
+#logInButton:hover{
+  cursor: pointer;
+}
+.enter-site{
+  min-height: 600px;
+  background: no-repeat center url('https://images.unsplash.com/photo-1506495262506-8c4ef383d872?ixlib=rb-0.3.5&s=6fa776af3dbab930e4d6621f07d155d6&auto=format&fit=crop&w=1650&q=80');
+}
+p#tagline{
+  color: #fff;
+  font-size: 1.3em;
+  padding-top: 20px;
+}
+#enter{
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+#enter:hover{
+  color: rgb(247, 104, 32);
+  text-decoration: none;
+}
+#twitter{
+  background-image: url('https://www.madewell.com/media/assets/footer/socialicons_sprite_v1_m56577569830742556.png');
 }

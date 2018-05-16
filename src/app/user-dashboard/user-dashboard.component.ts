@@ -39,6 +39,6 @@ export class UserDashboardComponent implements OnInit {
   submitForm(userName: string, itemUrl: string, type, size: string, colors: string, cut: string, condition: string){
     var newItem: ItemModel = new ItemModel(userName, itemUrl, this.newItemType, this.newItemSize, this.newItemColors, this.newItemCut, this.newItemCondition);
     console.log(newItem);
-    // this.itemsService.addItem(newItem);
+    this.itemsService.getItems();
   }
 }

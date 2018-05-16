@@ -31,7 +31,7 @@ _There are many known :bug: at this time, this is a work in progress_
 
 ## Support and contact details
 
-_If you'd like to chat, please contact_ @dawnrparty and @brenderbee _on_ ![alt text][1.1],  [Jess](Schmitz.jessical@gmail.com) and [Sean](seanjmac@hotmail.com) through email
+_If you'd like to chat, please contact_ @dawnrparty and @brenderbee _on_ ![alt text][1.1] _or_ [Jess](schmitz.jessical@gmail.com) _and_ [Sean](seanjmac@hotmail.com])
 
 ## Technologies Used
 
