@@ -1,5 +1,4 @@
 <div class="marketplace">
-  <h4>{{users[0].userNameLogIn}}</h4>
   <app-filter (typeSender)="typeParamSet($event)" (sizeSender)="sizeParamSet($event)" (cutSender)="cutParamSet($event)" (conditionSender)="conditionParamSet($event)" (colorSender)="colorParamSet($event)"></app-filter>
   <app-grid [childTypeParam]="typeParam" [childSizeParam]="sizeParam" [childCutParam]="cutParam" [childConditionParam]="conditionParam" [childColorParam]="colorParam"></app-grid>
 </div>

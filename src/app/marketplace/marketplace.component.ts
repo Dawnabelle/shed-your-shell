@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../user.service';
-import { User } from './../models/user.model';
+
 
 @Component({
   selector: 'app-marketplace',
   templateUrl: './marketplace.component.html',
-  styleUrls: ['./marketplace.component.css'],
-  providers: [UserService]
+  styleUrls: ['./marketplace.component.css']
 })
 export class MarketplaceComponent implements OnInit {
 
-  users: User[] = [];
 
-  constructor(private userService: UserService) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.users = this.userService.getUser();
-    console.log(this.users);
+
   }
 
   typeParam = null;
