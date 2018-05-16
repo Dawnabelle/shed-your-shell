@@ -1,5 +1,8 @@
 <div class="card" *ngFor="let item of items | async | type:childTypeParam  | size:childSizeParam | cut:childCutParam | condition:childConditionParam | color:childColorParam">
-  <!-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <div class="availability" *ngIf="item.availability === false">
+    <p>PENDING SWAP</p>
+  </div>
+  <img class="card-img-top" src="{{item.url}}" alt="Image of {{item.type}}">
   <div class="card-body">
     <h5 class="card-title">{{item.colors}} {{item.type}}, {{item.size}}</h5>
     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -10,10 +13,9 @@
     <li class="list-group-item">Cut: {{item.cut}}</li>
     <li class="list-group-item">Condition: {{item.condition}}</li>
     <li class="list-group-item">User: {{item.userName}}</li>
-    <li class="list-group-item">Availability: {{item.availability}}</li>
   </ul>
   <div class="card-body">
     <a href="#" class="card-link">Details</a>
-    <a href="#" class="card-link">Swap</a>
+    <a href="#" class="card-link" *ngIf="item.availability">Swap</a>
   </div>
 </div>
