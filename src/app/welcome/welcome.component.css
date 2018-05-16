@@ -6,7 +6,9 @@ input#userName{
 }
 input#userName, input#password{
   margin-top: 5px;
-  border: solid 1px #000;
+  border: solid 1px #5E6261;
+  border-radius: 7px;
+  box-shadow:  inset .5px .5px 1.5px #5E6261;
 }
 .user-login{
   display: flex;
@@ -21,6 +23,7 @@ input#userName, input#password{
 #logInButton:hover{
   cursor: pointer;
   color: rgb(247, 104, 32);
+  box-shadow: 5px 3px 3px #5E6261;
 
 }
 .enter-site{
@@ -41,6 +44,7 @@ p#tagline{
 #market:hover{
   color: rgb(247, 104, 32);
   text-decoration: none;
+  text-shadow: 2px 1px 1px #fff;
 }
 #twitter{
   background-image: url('https://www.madewell.com/media/assets/footer/socialicons_sprite_v1_m56577569830742556.png');
