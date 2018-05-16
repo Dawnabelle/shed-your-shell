@@ -23,10 +23,10 @@ export class GridComponent implements OnInit {
 
   ngOnInit() {
     this.items = this.itemsService.getItems();
+    console.log("this is the length of items OnInit:" , this.items);
   }
 
   toggleAvailability(itemToUpdate) {
-    console.log("toggleAvailability param: " , itemToUpdate);
     this.itemsService.updateItem(itemToUpdate);
   }
 

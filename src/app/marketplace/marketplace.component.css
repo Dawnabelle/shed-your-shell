@@ -11,10 +11,6 @@ app-filter {
   max-width: 250px;*/
   height: 100%;
   float: left;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: fixed;
   top: 0px;
   background: linear-gradient(rgb(194, 223, 244), rgb(121,217,217));

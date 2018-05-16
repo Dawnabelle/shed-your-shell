@@ -1,12 +1,12 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
-import { UserService } from '../../user.service';
-import { User } from './../models/user.model';
+// import { UserService } from '../../user.service';
+// import { User } from './../models/user.model';
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.css'],
-  providers: [UserService]
+  styleUrls: ['./filter.component.css']
+  // providers: [UserService]
 })
 export class FilterComponent implements OnInit {
 @Output() typeSender = new EventEmitter();
@@ -20,13 +20,13 @@ filterBySize: string = "";
 filterByCut: string = "";
 filterByCondition: string = "";
 filterByColor: string = "";
-users: User[] = [];
+// users: User[] = [];
 
-
-  constructor(private userService: UserService) { }
+// private userService: UserService
+  constructor() { }
 
   ngOnInit() {
-    this.users = this.userService.getUser();
+    // this.users = this.userService.getUser();
   }
 
   onChangeType(optionFromMenu) {
