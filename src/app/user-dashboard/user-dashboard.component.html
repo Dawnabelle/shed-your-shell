@@ -2,61 +2,75 @@
   <div class="card">
     <div class="card-body">
       <div  class="user-welcome">
-        <p class="user-welcome" *ngFor="let currentUser of users">Welcome, {{users[0].userNameLogIn}}</p>
+        <p class="user-welcome" *ngFor="let currentUser of users">Welcome, {{users[0].userNameLogIn}}!</p>
       </div>
       <h3 class="card-title">Upload Your Garment</h3>
       <div class="user-info">
-        <label> Confirm User Name (required)</label>
+        <label class="name-url"> Confirm User Name</label>
         <input #newUserName type="text" name="userName" required>
       </div>
       <div class="upload-img">
-        <label>Link Image URL</label>
+        <label class="name-url">Link Image URL</label>
         <input #newItemUrl type="text" name="itemUrl">
       </div>
-      <div class="radio-type">
-        <h3>Garment Type</h3>
-        <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="top">Top</label>
-        <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="bottom">Bottom</label>
-        <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="one-piece">One Piece</label>
-        <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="accessory">Accessory</label>
-      </div>
-      <div class="radio-size">
-        <h3>Size</h3>
-        <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="xs">Xtra-Small</label>
-        <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="s">Small</label>
-        <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="m">Medium</label>
-        <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="l">Large</label>
-        <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="xl">Xtra-Large</label>
-      </div>
-      <div class="radio-colors">
-        <h3>Colors</h3>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="red">Red</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="orange">Orange</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="yellow">Yellow</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="green">Green</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="blue">Blue</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="purple">Purple</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="pink">Pink</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="black">Black</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="white">White</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="grey">Grey</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="brown">Brown</label>
-        <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="multi">Multi-Color</label>
-      </div>
-      <div class="radio-cut">
-        <h3>Garment Cut</h3>
-        <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="femme">Femme</label>
-        <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="masc">Masc</label>
-        <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="unisex">Unisex</label>
-      </div>
-      <div class="radio-condition">
-        <h3>Garment Condition</h3>
-        <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="new">New</label>
-        <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="like-new">Like New</label>
-        <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="fair">Fair</label>
+      <div class="radio-items-box">
+        <div class="radio-type">
+          <h3>Garment Type</h3>
+          <div class="radio-sections">
+            <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="top">Top</label>
+            <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="bottom">Bottom</label>
+            <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="one-piece">One Piece</label>
+            <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="accessory">Accessory</label>
+            <label><input [(ngModel)]="newItemType" type="radio" name="newItemType" value="dress">Dress</label>
+          </div>
+        </div>
+        <div class="radio-size">
+          <h3>Size</h3>
+          <div class="radio-sections">
+            <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="xs">Xtra-Small</label>
+            <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="s">Small</label>
+            <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="m">Medium</label>
+            <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="l">Large</label>
+            <label><input [(ngModel)]="newItemSize" type="radio" name="item-size" value="xl">Xtra-Large</label>
+          </div>
+        </div>
+        <div class="radio-colors">
+          <h3>Colors</h3>
+          <div class="radio-sections">
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="red">Red</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="orange">Orange</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="yellow">Yellow</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="green">Green</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="blue">Blue</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="purple">Purple</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="pink">Pink</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="black">Black</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="white">White</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="grey">Grey</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="brown">Brown</label>
+            <label><input [(ngModel)]="newItemColors" type="radio" name="item-colors" value="multi">Multi-Color</label>
+          </div>
+        </div>
+        <div class="radio-cut">
+          <h3>Garment Cut</h3>
+          <div class="radio-sections">
+            <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="femme">Femme</label>
+            <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="masc">Masc</label>
+            <label><input [(ngModel)]="newItemCut" type="radio" name="item-cut" value="unisex">Unisex</label>
+          </div>
+        </div>
+        <div class="radio-condition">
+          <h3>Garment Condition</h3>
+          <div class="radio-sections">
+            <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="new">New</label>
+            <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="like-new">Like New</label>
+            <label><input [(ngModel)]="newItemCondition" type="radio" name="item-condition" value="fair">Fair</label>
+          </div>
+        </div>
       </div>
       <div class="save-garment">
         <button (click)="submitForm(newUserName.value, newItemUrl.value);  newUserName.value=''; newItemUrl.value=''; newItemType.value=''; newItemSize.value=''; newItemColors.value=''; newItemCut.value=''; newItemCondition.value=''" type="submit" id="save-garment">Save Garment!</button>
+        <p ><span id="stored"></span></p>
       </div>
     </div>
   </div>
