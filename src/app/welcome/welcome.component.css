@@ -31,6 +31,7 @@ p#tagline{
   color: #fff;
   font-size: 1.3em;
   padding-top: 20px;
+  font-style: italic;
 }
 #market{
   color: #fff;
@@ -43,4 +44,16 @@ p#tagline{
 }
 #twitter{
   background-image: url('https://www.madewell.com/media/assets/footer/socialicons_sprite_v1_m56577569830742556.png');
+}
+@media (min-width: 950px){
+  .user-login{
+    display: flex;
+    justify-content: flex-end;
+  }
+  p#tagline{
+    font-size: 2.3em;
+  }
+  #market{
+    font-size: 2.6em;
+  }
 }
