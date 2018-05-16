@@ -1,29 +1,63 @@
 .card-body {
   background: linear-gradient(rgba(194, 223, 244), rgba(121, 217, 217));
+  min-height: 900px;
+}
+input{
+  border-radius: 7px;
+}
+.user-info, div.upload-img{
+  margin-bottom: 20px;
 }
 .card-body label {
   color: #5E6261;
 }
+label.name-url{
+  font-size: 1.5em;
+}
 h3.card-title, h3{
   color: #5E6261;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 h3.card-title{
   font-size: 2.7em;
   border-bottom: 1px solid #5E6261;
   margin-bottom: 30px;
 }
-#save-garment:hover {
-  color: rgb(247, 104, 32)
-}
-.marketplace-button {
+#save-garment{
   margin-top: 20px;
+  border-radius: 7px;
+  color: rgb(121, 217, 217);
+}
+#save-garment:hover {
+  color: rgb(247, 104, 32);
+  box-shadow: 5px 3px 3px #5E6261;
+}
+.marketplace-button .button {
+  margin-top: 20px;
+  border-radius: 7px;
+  color: rgb(121, 217, 217);
 }
 .marketplace-button .button:hover {
   color: rgb(247, 104, 32);
+  box-shadow: 5px 3px 3px #5E6261;
 }
 #stored{
   margin-top: 20px;
   font-weight: bold;
   color: rgb(247, 104, 32);
   font-size: 1.25em;
+}
+@media (max-width: 450px) {
+  #save-garment{
+    min-height: 30px;
+    background-color: #fff;
+    color: rgb(121, 217, 217);
+    border-radius: 7px;
+    margin-top: 20px;
+  }
+  #save-garment:hover{
+    box-shadow: 5px 3px 3px #5E6261;
+  }
 }
