@@ -25,5 +25,9 @@ export class GridComponent implements OnInit {
     this.items = this.itemsService.getItems();
   }
 
+  toggleAvailability(itemToUpdate) {
+    console.log("toggleAvailability param: " , itemToUpdate);
+    this.itemsService.updateItem(itemToUpdate);
+  }
 
 }

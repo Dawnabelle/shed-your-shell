@@ -3,3 +3,23 @@
   flex-direction: column;
   width: 30%;
 }
+
+.availability {
+  z-index: 1000;
+  position: absolute;
+  top: 20%;
+  color: black;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(140, 223, 229, 0.8);
+}
+
+.availability p {
+  line-height: 3rem;
+}
+
+.btn {
+  background-color: rgb(140, 223, 229);
+}
