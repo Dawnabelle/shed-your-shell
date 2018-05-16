@@ -36,8 +36,11 @@ export class UserDashboardComponent implements OnInit {
 
 
   submitForm(userName: string, itemUrl: string, type: string, size: string, colors: string, cut: string, condition: string){
-    var newItem: ItemModel = new ItemModel(userName, itemUrl, this.newItemType, this.newItemSize, this.newItemColors, this.newItemCut, this.newItemCondition);
+    let stored = document.getElementById('stored');
+
+    let newItem: ItemModel = new ItemModel(userName, itemUrl, this.newItemType, this.newItemSize, this.newItemColors, this.newItemCut, this.newItemCondition);
     console.log(newItem);
     this.itemsService.addItems(newItem);
+    stored.innerHTML += "Your item has been stored! Click the button below to proceed to the marketplace.";
   }
 }

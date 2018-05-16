@@ -21,7 +21,9 @@ h3.card-title{
 .marketplace-button .button:hover {
   color: rgb(247, 104, 32);
 }
-[type="radio"]{
-  color: orange;
-  background-color: orange;
+#stored{
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgb(247, 104, 32);
+  font-size: 1.25em;
 }
