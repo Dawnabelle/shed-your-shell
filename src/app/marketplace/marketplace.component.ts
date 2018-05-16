@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-marketplace',
   templateUrl: './marketplace.component.html',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class MarketplaceComponent implements OnInit {
 
 
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
   typeParam = null;

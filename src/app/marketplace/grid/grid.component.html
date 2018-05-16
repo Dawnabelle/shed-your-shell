@@ -2,10 +2,11 @@
   <div class="availability" *ngIf="item.availability === false">
     <p>PENDING SWAP</p>
   </div>
-  <img class="card-img-top" src="{{item.url}}" alt="Image of {{item.type}}">
+  <div class="card-img-container">
+    <img class="card-img-top" src="{{item.url}}" alt="Image of {{item.type}}">
+  </div>
   <div class="card-body">
     <h5 class="card-title">{{item.colors}} {{item.type}}, {{item.size}}</h5>
-    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Size: {{item.size}}</li>
@@ -14,8 +15,7 @@
     <li class="list-group-item">Condition: {{item.condition}}</li>
     <li class="list-group-item">User: {{item.userName}}</li>
   </ul>
-  <div class="card-body">
-    <!-- <a href="#" class="card-link">Details</a> -->
+  <div class="card-body-button">
     <button href="#" class="btn" *ngIf="item.availability" (click)="toggleAvailability(item)">Swap</button>
   </div>
 </div>
