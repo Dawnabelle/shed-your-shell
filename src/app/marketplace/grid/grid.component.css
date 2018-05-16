@@ -1,21 +1,31 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 250px;
   align-self: flex-start;
   border: 2px solid rgb(140, 223, 229);
   margin-bottom: 1.5rem;
 }
 
-.card img {
+.card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 250px;
+  overflow: hidden;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card img {
+  height: 100%;
   width: auto;
 }
 
 .availability {
   z-index: 1000;
   position: absolute;
-  top: 20%;
+  top: 100px;
   color: black;
   width: 100%;
   height: 3rem;
@@ -26,6 +36,13 @@
 
 .availability p {
   line-height: 3rem;
+}
+
+.card-body-button {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
