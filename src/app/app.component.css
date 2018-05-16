@@ -17,8 +17,6 @@ span.fa{
 @media (min-width: 950px){
   #heading{
     font-size: 3.5em;
-    /*border-bottom: solid 1px #D0DBD9;*/
-    /*margin: 20px 450px 0 450px;*/
   }
   span.fa{
     font-size: 40px;

@@ -18,7 +18,6 @@ export class UserDashboardComponent implements OnInit {
 
   items: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  // newItemUrl: string = "https://images.unsplash.com/photo-1507568237455-03228e5ddb7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fbcbd24529749be10844e137c3e409d7&auto=format&fit=crop&w=1246&q=80";
   newItemType: string = "top";
   newItemSize: string = "xs";
   newItemColors: string = "red";
