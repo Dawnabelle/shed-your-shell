@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   width: 30%;
+  align-self: flex-start;
+  border: 2px solid rgb(140, 223, 229);
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  height: 250px;
+  width: auto;
 }
 
 .availability {
@@ -22,4 +30,13 @@
 
 .btn {
   background-color: rgb(140, 223, 229);
+}
+
+.list-group li {
+  border-top: 1px solid rgb(140, 223, 229);
+  /*border-bottom: 2px solid rgb(140, 223, 229);*/
+}
+
+.list-group-item:last-child {
+  border-bottom: 1px solid rgb(140, 223, 229);
 }
