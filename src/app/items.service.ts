@@ -20,4 +20,9 @@ export class ItemsService {
     return this.database.object('items/' + itemID);
   }
 
+  updateItem(localUpdatedItem) {
+    let itemEntryInFirebase = this.getItemById(localUpdatedItem.$key);
+    itemEntryInFirebase.update({availability: localUpdatedItem.availability = false});
+  }
+
 }
